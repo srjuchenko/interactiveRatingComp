@@ -26,14 +26,159 @@ html {
 
 .hidden {
   display: none;
+  color: #252d37;
+  color: #7c8798;
+  color: #121417;
+  color: #959eac;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #121417;
 }
 
 /* MAIN */
+.modal {
+  background-image: linear-gradient(0deg, #191d23 0%, #1e2733 100%);
 
+  height: 41.5rem;
+  width: 41.5rem;
+  border-radius: 20px;
+  padding: 3rem;
+}
+
+.modal-header h1 {
+  color: #fff;
+  font-weight: 700;
+  margin-top: 3.5rem;
+}
+
+p {
+  color: #7c8798;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.modal-description p {
+  margin-top: 2rem;
+}
+
+.modal-ratings {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #252d37;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  color: #959eac;
+  font-size: 1.5rem;
+}
+
+.submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  padding: 1.5rem;
+  background-color: #fb7413;
+  border-radius: 50px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.thank-you-state {
+  text-align: center;
+}
+
+.thanks-selected {
+  margin-top: 3rem;
+  display: inline-block;
+  color: #fb7413c3;
+  font-weight: 400;
+  font-size: 1.4rem;
+  background-color: #2f38437f;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+}
+
+.thanks-header {
+  color: #fff;
+  font-weight: 400;
+  margin-top: 4rem;
+  font-size: 1.8rem;
+}
+
+.thanks-description p {
+  font-size: 1.57rem;
+  line-height: 1.3;
+  margin-top: 2rem;
+  font-weight: 400;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 1rem;
+}
 .attribution {
+  color: #7c8798;
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 420px) {
+  .modal {
+    width: 32.5rem;
+    height: 36rem;
+    padding: 2rem 2rem;
+  }
+
+  .modal-header h1 {
+    margin-top: 2rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+  .modal-description p {
+    margin-top: 2rem;
+  }
+
+  .btn {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .thanks-selected {
+    margin-top: 2rem;
+    padding: 1rem 1rem;
+    border-radius: 50px;
+  }
+
+  .thanks-header {
+    font-size: 1.6rem;
+    margin-top: 3rem;
+  }
+
+  .thanks-description p {
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
 }
