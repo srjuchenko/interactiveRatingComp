@@ -84,6 +84,11 @@ p {
   border-radius: 100%;
   color: #959eac;
   font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+.modal-ratings .btn:hover {
+  cursor: pointer;
 }
 
 .submit-btn {
@@ -99,6 +104,13 @@ p {
   font-weight: 400;
   color: #fff;
   letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #fb7413;
 }
 
 .thank-you-state {
